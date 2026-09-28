@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  phase1-automation:
+    build: .
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./metrics:/app/metrics
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
