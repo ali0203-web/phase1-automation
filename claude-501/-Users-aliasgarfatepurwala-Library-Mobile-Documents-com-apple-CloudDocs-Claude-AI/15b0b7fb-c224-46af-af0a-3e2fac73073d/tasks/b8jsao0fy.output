@@ -1,0 +1,25 @@
+[main a796c6d] Phase 3: Add AI Trading Bot brain files, MCP config, hooks
+ 25 files changed, 3408 insertions(+), 70 deletions(-)
+ create mode 100644 .claude/brain/MARKET_RULES.md
+ create mode 100644 .claude/brain/POSITION_SIZING.md
+ create mode 100644 .claude/brain/RISK.md
+ create mode 100644 .claude/brain/TRADING.md
+ create mode 100644 .claude/hooks.json
+ create mode 100644 .claude/launch.json
+ create mode 100644 .claude/settings.json
+ create mode 100644 DISCORD_IMPLEMENTATION_COMPLETE.md
+ create mode 100644 DISCORD_INTEGRATION_SETUP.md
+ create mode 100644 DISCORD_OAUTH_VERIFICATION_COMPLETE.md
+ create mode 100644 DISCORD_SETUP.sql
+ create mode 100644 api/discord-exchange.js
+ delete mode 100644 dist/assets/index-BXHGGEdF.css
+ delete mode 100644 dist/assets/index-DID6VaUp.js
+ create mode 100644 src/components/DiscordConnect.jsx
+ create mode 100644 src/hooks/useDiscord.js
+ create mode 100644 src/hooks/useRFQNotifications.js
+ create mode 100644 src/pages/Discord.jsx
+ create mode 100644 src/pages/RFQCampaign.jsx
+ create mode 100644 src/services/discordClient.js
+ create mode 100644 src/services/rfqNotificationService.js
+
+[exited with code 0]

@@ -1,0 +1,8 @@
+[build]
+builder = "dockerfile"
+dockerfile = "Dockerfile"
+dockerignore = ".dockerignore"
+
+[deploy]
+restartPolicyMaxRetries = 0
+restartPolicyWindow = 60

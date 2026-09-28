@@ -1,0 +1,29 @@
+========================================
+DISK TRANSFER PROCESS STARTED
+Target Vault: /Users/aliasgarfatepurwala/Claude-Data-Vault/archives/disk-transfer-2026-09-28
+Timestamp: 20260928_054352
+========================================
+
+BEGINNING TRANSFERS...
+========================================
+
+>>> Transferring: /Users/aliasgarfatepurwala/Library/Caches
+    Type: Directory
+du: /Users/aliasgarfatepurwala/Library/Caches/familycircled: Operation not permitted
+du: /Users/aliasgarfatepurwala/Library/Caches/com.apple.HomeKit: Operation not permitted
+du: /Users/aliasgarfatepurwala/Library/Caches/CloudKit: Operation not permitted
+du: /Users/aliasgarfatepurwala/Library/Caches/com.apple.Safari: Operation not permitted
+du: /Users/aliasgarfatepurwala/Library/Caches/com.apple.findmy.imagecache: Operation not permitted
+du: /Users/aliasgarfatepurwala/Library/Caches/com.apple.findmy.fmfcore: Operation not permitted
+du: /Users/aliasgarfatepurwala/Library/Caches/com.apple.containermanagerd: Operation not permitted
+du: /Users/aliasgarfatepurwala/Library/Caches/com.apple.Safari.SafeBrowsing: Operation not permitted
+du: /Users/aliasgarfatepurwala/Library/Caches/FamilyCircle: Operation not permitted
+du: /Users/aliasgarfatepurwala/Library/Caches/com.apple.homed: Operation not permitted
+du: /Users/aliasgarfatepurwala/Library/Caches/com.apple.findmy.fmipcore: Operation not permitted
+du: /Users/aliasgarfatepurwala/Library/Caches/com.apple.ap.adprivacyd: Operation not permitted
+    Size: 1.9G
+    ❌ Copy failed with code 1
+
+>>> Transferring: /Users/aliasgarfatepurwala/Library/Mobile Documents
+    Type: Directory
+    Size: 302M

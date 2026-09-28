@@ -1,0 +1,30 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "nixpacks"
+  },
+  "deploy": {
+    "startCommand": "npm start",
+    "restartPolicyType": "on_failure",
+    "restartPolicyMaxRetries": 5
+  },
+  "plugins": [
+    {
+      "source": "${{ plugin.postgres }}"
+    }
+  ],
+  "variables": {
+    "TRADING_MODE": {
+      "description": "TESTNET for paper trading, PRODUCTION for real money",
+      "value": "TESTNET"
+    },
+    "LOG_LEVEL": {
+      "description": "Logging level: debug, info, warn, error",
+      "value": "info"
+    },
+    "NODE_ENV": {
+      "description": "Node environment",
+      "value": "production"
+    }
+  }
+}

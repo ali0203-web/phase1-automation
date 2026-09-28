@@ -1,0 +1,10 @@
+{
+  "name": "phase1-automation",
+  "description": "Phase 1 Social Media Automation",
+  "environment": {
+    "GITHUB_TOKEN": {},
+    "TWITTER_API_KEY": {},
+    "REDDIT_CLIENT_ID": {},
+    "LINKEDIN_ACCESS_TOKEN": {}
+  }
+}

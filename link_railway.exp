@@ -1,0 +1,21 @@
+#!/usr/bin/env expect
+
+set timeout 10
+
+# Start railway link
+spawn railway project link
+
+# Wait for workspace selection prompt
+expect "Select a workspace"
+send "1\r"
+
+# Wait for project selection prompt  
+expect "Select a project"
+send "4\r"
+
+# Wait for environment selection prompt
+expect "Select an environment"
+send "1\r"
+
+# Wait for completion
+expect eof

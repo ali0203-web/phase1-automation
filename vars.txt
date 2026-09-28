@@ -1,0 +1,39 @@
+╔════════════════════════ Variables for fabulous-energy ═══════════════════════╗
+║ BINANCE_TESTNET_API_KEY    │ oibQy50SPkGO1WQLsNmO2jrqiHmbEJBlqURlXuh0OSCzvSw ║
+║                            │ Tc5okcyAa22STOPm                                ║
+║──────────────────────────────────────────────────────────────────────────────║
+║ BINANCE_TESTNET_SECRET_KEY │ eGpKKMoW8Oh7n5qmzfNRT9E6KG3a2EFqebCK88syRuhzObw ║
+║                            │ A2BEMW5laTXtQ0ZSE                               ║
+║──────────────────────────────────────────────────────────────────────────────║
+║ DATABASE_URL               │ postgresql://                                   ║
+║                            │ postgres:lMwkKanqceBecPkNuTYJdqinYzGPZaTQ@postg ║
+║                            │ res.railway.internal:5432/railway               ║
+║──────────────────────────────────────────────────────────────────────────────║
+║ DISCORD_WEBHOOK_URL        │ https://discord.com/api/                        ║
+║                            │ webhooks/1553601983229861888/                   ║
+║                            │ RS3pzcieeYtMLY69gQeQPVx1kHl9wDB2gPl97vGFJrc80w0 ║
+║                            │ qxgCu27WRLnEs0ZAf64nR                           ║
+║──────────────────────────────────────────────────────────────────────────────║
+║ LOG_LEVEL                  │ info                                            ║
+║──────────────────────────────────────────────────────────────────────────────║
+║ NODE_ENV                   │ production                                      ║
+║──────────────────────────────────────────────────────────────────────────────║
+║ RAILWAY_ENVIRONMENT        │ production                                      ║
+║──────────────────────────────────────────────────────────────────────────────║
+║ RAILWAY_ENVIRONMENT_ID     │ 14b6598e-d718-4d5e-bff7-e61de355bcc0            ║
+║──────────────────────────────────────────────────────────────────────────────║
+║ RAILWAY_ENVIRONMENT_NAME   │ production                                      ║
+║──────────────────────────────────────────────────────────────────────────────║
+║ RAILWAY_PRIVATE_DOMAIN     │ fabulous-energy.railway.internal                ║
+║──────────────────────────────────────────────────────────────────────────────║
+║ RAILWAY_PROJECT_ID         │ 3d453ad9-1b9c-4f72-8a45-c4282d6c0157            ║
+║──────────────────────────────────────────────────────────────────────────────║
+║ RAILWAY_PROJECT_NAME       │ bountiful-miracle                               ║
+║──────────────────────────────────────────────────────────────────────────────║
+║ RAILWAY_SERVICE_ID         │ 0102f760-e57b-4655-a732-6d29bde3f053            ║
+║──────────────────────────────────────────────────────────────────────────────║
+║ RAILWAY_SERVICE_NAME       │ fabulous-energy                                 ║
+║──────────────────────────────────────────────────────────────────────────────║
+║ TRADING_MODE               │ TESTNET                                         ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+

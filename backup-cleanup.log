@@ -1,0 +1,86 @@
+=== Backup & Cleanup Started: Sun Sep 27 02:43:56 +04 2026 ===
+🔍 Scanning for large files/directories...
+🧹 Cleaning old cache files...
+find: /Users/aliasgarfatepurwala/Library/Caches/familycircled: Operation not permitted
+find: -delete: unlink(/Users/aliasgarfatepurwala/Library/Caches/com.easeus.datarecoverywizard/Cache.db-shm): Permission denied
+find: -delete: unlink(/Users/aliasgarfatepurwala/Library/Caches/com.easeus.datarecoverywizard/Cache.db-wal): Permission denied
+find: -delete: unlink(/Users/aliasgarfatepurwala/Library/Caches/com.easeus.datarecoverywizard/Cache.db): Permission denied
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.HomeKit: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/CloudKit: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.Safari: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.findmy.imagecache: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.findmy.fmfcore: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.containermanagerd: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.Safari.SafeBrowsing: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/FamilyCircle: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.homed: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.findmy.fmipcore: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.ap.adprivacyd: Operation not permitted
+✅ Cache cleanup done
+💾 Disk space freed: 400824800
+=== Completed: Sun Sep 27 02:44:07 +04 2026 ===
+
+📋 Backup & Cleanup Log:
+find: /Users/aliasgarfatepurwala/Library/Caches/familycircled: Operation not permitted
+find: -delete: unlink(/Users/aliasgarfatepurwala/Library/Caches/com.easeus.datarecoverywizard/Cache.db-shm): Permission denied
+find: -delete: unlink(/Users/aliasgarfatepurwala/Library/Caches/com.easeus.datarecoverywizard/Cache.db-wal): Permission denied
+find: -delete: unlink(/Users/aliasgarfatepurwala/Library/Caches/com.easeus.datarecoverywizard/Cache.db): Permission denied
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.HomeKit: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/CloudKit: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.Safari: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.findmy.imagecache: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.findmy.fmfcore: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.containermanagerd: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.Safari.SafeBrowsing: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/FamilyCircle: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.homed: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.findmy.fmipcore: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.ap.adprivacyd: Operation not permitted
+✅ Cache cleanup done
+💾 Disk space freed: 400824800
+=== Completed: Sun Sep 27 02:44:07 +04 2026 ===
+
+📋 Backup & Cleanup Log:
+=== Backup & Cleanup Started: Sun Sep 27 09:59:28 +04 2026 ===
+🔍 Scanning for large files/directories...
+🧹 Cleaning old cache files...
+find: /Users/aliasgarfatepurwala/Library/Caches/familycircled: Operation not permitted
+find: -delete: unlink(/Users/aliasgarfatepurwala/Library/Caches/com.easeus.datarecoverywizard/Cache.db-shm): Permission denied
+find: -delete: unlink(/Users/aliasgarfatepurwala/Library/Caches/com.easeus.datarecoverywizard/Cache.db-wal): Permission denied
+find: -delete: unlink(/Users/aliasgarfatepurwala/Library/Caches/com.easeus.datarecoverywizard/Cache.db): Permission denied
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.HomeKit: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/CloudKit: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.Safari: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.findmy.imagecache: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.findmy.fmfcore: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.containermanagerd: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.Safari.SafeBrowsing: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/FamilyCircle: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.homed: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.findmy.fmipcore: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.ap.adprivacyd: Operation not permitted
+✅ Cache cleanup done
+💾 Disk space freed: 211992160
+=== Completed: Sun Sep 27 09:59:51 +04 2026 ===
+
+📋 Backup & Cleanup Log:
+find: /Users/aliasgarfatepurwala/Library/Caches/familycircled: Operation not permitted
+find: -delete: unlink(/Users/aliasgarfatepurwala/Library/Caches/com.easeus.datarecoverywizard/Cache.db-shm): Permission denied
+find: -delete: unlink(/Users/aliasgarfatepurwala/Library/Caches/com.easeus.datarecoverywizard/Cache.db-wal): Permission denied
+find: -delete: unlink(/Users/aliasgarfatepurwala/Library/Caches/com.easeus.datarecoverywizard/Cache.db): Permission denied
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.HomeKit: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/CloudKit: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.Safari: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.findmy.imagecache: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.findmy.fmfcore: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.containermanagerd: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.Safari.SafeBrowsing: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/FamilyCircle: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.homed: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.findmy.fmipcore: Operation not permitted
+find: /Users/aliasgarfatepurwala/Library/Caches/com.apple.ap.adprivacyd: Operation not permitted
+✅ Cache cleanup done
+💾 Disk space freed: 211992160
+=== Completed: Sun Sep 27 09:59:51 +04 2026 ===
+
+📋 Backup & Cleanup Log:

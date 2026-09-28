@@ -1,0 +1,6 @@
+error: unexpected argument '--no-input' found
+
+Usage: railway init --name <NAME>
+
+For more information, try '--help'.
+

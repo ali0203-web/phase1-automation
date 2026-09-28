@@ -1,0 +1,12 @@
+=== STEP 8: VERIFY DEV SERVER ===
+
+Checking Vite server process:
+aliasgarfatepurwala 74389   0.1  0.1 489744688   5520   ??  SN   11:19PM   0:00.26 npm run dev   
+aliasgarfatepurwala 74410   0.0  0.1 498146240   7872   ??  SN   11:19PM   0:01.35 node /Users/aliasgarfatepurwala/Library/Mobile Documents/com~apple~CloudDocs/Claude AI/trading-os/node_modules/.bin/vite
+aliasgarfatepurwala 74110   0.0  0.1 498145056  11088   ??  SN   11:18PM   0:01.38 node /Users/aliasgarfatepurwala/Library/Mobile Documents/com~apple~CloudDocs/Claude AI/trading-os/node_modules/.bin/vite
+aliasgarfatepurwala 74080   0.0  0.1 489748704   4384   ??  SN   11:18PM   0:00.28 npm run dev   
+aliasgarfatepurwala 76591   0.0  0.1 489744720   9984   ??  SN   11:27PM   0:00.23 npm run dev   
+
+Testing server response:
+
+[exited with code 144]

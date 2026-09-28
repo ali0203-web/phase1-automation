@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Apple Global Domain: NSGlassDiffusionSetting</key>
+	<false/>
+	<key>com.apple.systempreferences: AppQuitTransactions</key>
+	<array/>
+	<key>com.apple.systempreferences: DidShowPrefBundleIDs</key>
+	<array>
+		<string>com.apple.preferences.softwareupdate</string>
+		<string>com.apple.preferences.AppleIDPrefPane</string>
+		<string>com.apple.Software-Update-Settings.extension</string>
+	</array>
+	<key>com.apple.systemsettings.extensions: IndexSettings-indexing completed time</key>
+	<string>2026-08-28 08:52:11+04:00</string>
+	<key>com.apple.systemsettings.extensions: IndexSettings-indexing done</key>
+	<string>success</string>
+	<key>com.apple.systemsettings.extensions: IndexSettings-indexing start time</key>
+	<string>2026-08-28 08:47:22+04:00</string>
+	<key>com.apple.systemsettings.extensions: IndexSettings-indexing status</key>
+	<dict>
+		<key>com.apple.Accessibility-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.AirDrop-Handoff-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Appearance-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.BluetoothSettings</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Classroom-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.ControlCenter-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Coverage-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Date-Time-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Desktop-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Displays-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Family-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Focus-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.FollowUpSettings.FollowUpSettingsExtension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Game-Center-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.HeadphoneSettings</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Home.PrivacySettingsExtension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Internet-Accounts-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Keyboard-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Localization-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Lock-Screen-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.LoginItems-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Network-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.NetworkExtensionSettingsUI.NESettingsUIExtension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Notifications-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Passwords-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Print-Scan-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Profiles-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Screen-Time-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.SecurityImprovements-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Sharing-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Software-Update-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Sound-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Spotlight-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Startup-Disk-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.SystemProfiler.AboutExtension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Time-Machine-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Transfer-Reset-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Users-Groups-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.WalletSettingsExtension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.Wallpaper-Settings.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.settings.PrivacySecurity.extension</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.settings.Storage</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.systempreferences.AppleIDSettings</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.systempreferences.GeneralSettings</key>
+		<string>Deleted old index items. Added new index items</string>
+		<key>com.apple.wifi-settings-extension</key>
+		<string>Deleted old index items. Added new index items</string>
+	</dict>
+	<key>com.apple.systemsettings.extensions: current_state</key>
+	<dict>
+		<key>device.cddvd</key>
+		<false/>
+		<key>device.mouse</key>
+		<false/>
+		<key>device.touchID</key>
+		<true/>
+		<key>device.trackpad</key>
+		<true/>
+		<key>powersource.battery</key>
+		<true/>
+		<key>supports.menuBarExperience</key>
+		<true/>
+		<key>supports.systemAssistantExperience</key>
+		<true/>
+		<key>user.isguest</key>
+		<false/>
+	</dict>
+	<key>com.apple.systemsettings.extensions: force-state-indexing completed time</key>
+	<string>2026-09-27 02:41:36+04:00</string>
+	<key>com.apple.systemsettings.extensions: force-state-indexing start time</key>
+	<string>2026-09-27 10:00:25+04:00</string>
+	<key>com.apple.systemsettings.extensions: update-state-indexing completed time</key>
+	<string>2026-09-27 02:47:32+04:00</string>
+	<key>com.apple.systemsettings.extensions: update-state-indexing done</key>
+	<true/>
+	<key>com.apple.systemsettings.extensions: update-state-indexing start time</key>
+	<string>2026-09-27 02:44:04+04:00</string>
+	<key>com.apple.systemsettings.extensions: update-state-indexing status</key>
+	<dict/>
+</dict>
+</plist>
