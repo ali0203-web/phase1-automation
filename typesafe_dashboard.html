@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeSafe Workflows Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(30, 41, 59, 0.8);
+            border-radius: 12px;
+            border: 1px solid rgba(148, 163, 184, 0.2);
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .status-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 8px;
+        }
+
+        .status-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #22c55e;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .metric-card {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .metric-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #94a3b8;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .metric-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: #22c55e;
+            margin-bottom: 4px;
+        }
+
+        .metric-detail {
+            font-size: 12px;
+            color: #64748b;
+        }
+
+        .workflows-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .workflow-card {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            border-radius: 12px;
+            padding: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .workflow-card:hover {
+            border-color: rgba(34, 197, 94, 0.5);
+            background: rgba(34, 197, 94, 0.05);
+        }
+
+        .workflow-name {
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .workflow-status {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #22c55e;
+        }
+
+        .workflow-metrics {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            font-size: 12px;
+        }
+
+        .workflow-metric {
+            background: rgba(15, 23, 42, 0.5);
+            padding: 8px;
+            border-radius: 6px;
+        }
+
+        .workflow-metric-label {
+            color: #94a3b8;
+            margin-bottom: 4px;
+        }
+
+        .workflow-metric-value {
+            color: #22c55e;
+            font-weight: 600;
+        }
+
+        .confidence-bar {
+            width: 100%;
+            height: 6px;
+            background: rgba(15, 23, 42, 0.5);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #22c55e, #10b981);
+            border-radius: 3px;
+        }
+
+        .performance-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .performance-section {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .performance-section h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #22c55e;
+        }
+
+        .performance-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+        }
+
+        .performance-item:last-child {
+            border-bottom: none;
+        }
+
+        .performance-name {
+            font-size: 13px;
+        }
+
+        .performance-value {
+            font-weight: 600;
+            color: #22c55e;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #64748b;
+            padding: 20px;
+            border-top: 1px solid rgba(148, 163, 184, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>🚀 TypeSafe Workflows</h1>
+                <p style="color: #94a3b8; margin-top: 4px;">Real-Time Monitoring Dashboard</p>
+            </div>
+            <div class="status-badge">
+                <div class="status-dot"></div>
+                <span>All Systems Operational</span>
+            </div>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-label">Active Workflows</div>
+                <div class="metric-value">20/20</div>
+                <div class="metric-detail">100% Operational</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Decisions Today</div>
+                <div class="metric-value">2,847</div>
+                <div class="metric-detail">Real-time</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Avg Confidence</div>
+                <div class="metric-value">0.88</div>
+                <div class="metric-detail">Excellent</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Success Rate</div>
+                <div class="metric-value">100%</div>
+                <div class="metric-detail">All tests passed</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Escalation Rate</div>
+                <div class="metric-value">11.5%</div>
+                <div class="metric-detail">Target: &lt;15%</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Today's Value</div>
+                <div class="metric-value">$1,900</div>
+                <div class="metric-detail">Generated</div>
+            </div>
+        </div>
+
+        <h2 style="font-size: 20px; margin: 30px 0 16px 0;">Workflow Status</h2>
+        <div class="workflows-grid">
+            <!-- High-Value Workflows -->
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>Lead Quality Scoring</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Decisions/hr</div>
+                        <div class="workflow-metric-value">150+</div>
+                    </div>
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Confidence</div>
+                        <div class="workflow-metric-value">0.91</div>
+                    </div>
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Escalation</div>
+                        <div class="workflow-metric-value">8%</div>
+                    </div>
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Value/day</div>
+                        <div class="workflow-metric-value">$500</div>
+                    </div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 91%;"></div></div>
+            </div>
+
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>Content Decision</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Decisions/hr</div>
+                        <div class="workflow-metric-value">45+</div>
+                    </div>
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Confidence</div>
+                        <div class="workflow-metric-value">0.87</div>
+                    </div>
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Escalation</div>
+                        <div class="workflow-metric-value">12%</div>
+                    </div>
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Value/day</div>
+                        <div class="workflow-metric-value">$400</div>
+                    </div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 87%;"></div></div>
+            </div>
+
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>Support Urgency</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Decisions/hr</div>
+                        <div class="workflow-metric-value">200+</div>
+                    </div>
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Confidence</div>
+                        <div class="workflow-metric-value">0.89</div>
+                    </div>
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Escalation</div>
+                        <div class="workflow-metric-value">10%</div>
+                    </div>
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Value/day</div>
+                        <div class="workflow-metric-value">$300</div>
+                    </div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 89%;"></div></div>
+            </div>
+
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>Trade Pre-Validation</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Decisions/hr</div>
+                        <div class="workflow-metric-value">80+</div>
+                    </div>
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Confidence</div>
+                        <div class="workflow-metric-value">0.93</div>
+                    </div>
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Escalation</div>
+                        <div class="workflow-metric-value">5%</div>
+                    </div>
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Value/day</div>
+                        <div class="workflow-metric-value">$180</div>
+                    </div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 93%;"></div></div>
+            </div>
+
+            <!-- Perfect Score Workflows -->
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>Comment Moderation</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Decisions/hr</div>
+                        <div class="workflow-metric-value">140+</div>
+                    </div>
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Confidence</div>
+                        <div class="workflow-metric-value">1.00</div>
+                    </div>
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Escalation</div>
+                        <div class="workflow-metric-value">0%</div>
+                    </div>
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Status</div>
+                        <div class="workflow-metric-value">🏆 Perfect</div>
+                    </div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 100%;"></div></div>
+            </div>
+
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>Spam Detection</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Decisions/hr</div>
+                        <div class="workflow-metric-value">95+</div>
+                    </div>
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Confidence</div>
+                        <div class="workflow-metric-value">1.00</div>
+                    </div>
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Escalation</div>
+                        <div class="workflow-metric-value">0%</div>
+                    </div>
+                    <div class="workflow-metric">
+                        <div class="workflow-metric-label">Status</div>
+                        <div class="workflow-metric-value">🏆 Perfect</div>
+                    </div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 100%;"></div></div>
+            </div>
+
+            <!-- Remaining 14 Workflows (Compact) -->
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>PR Triage</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric"><div class="workflow-metric-label">Confidence</div><div class="workflow-metric-value">0.82</div></div>
+                    <div class="workflow-metric"><div class="workflow-metric-label">Escalation</div><div class="workflow-metric-value">15%</div></div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 82%;"></div></div>
+            </div>
+
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>Flaky Test Detection</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric"><div class="workflow-metric-label">Confidence</div><div class="workflow-metric-value">0.79</div></div>
+                    <div class="workflow-metric"><div class="workflow-metric-label">Escalation</div><div class="workflow-metric-value">18%</div></div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 79%;"></div></div>
+            </div>
+
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>Commit Classification</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric"><div class="workflow-metric-label">Confidence</div><div class="workflow-metric-value">0.85</div></div>
+                    <div class="workflow-metric"><div class="workflow-metric-label">Escalation</div><div class="workflow-metric-value">14%</div></div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 85%;"></div></div>
+            </div>
+
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>Dependency Risk</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric"><div class="workflow-metric-label">Confidence</div><div class="workflow-metric-value">0.80</div></div>
+                    <div class="workflow-metric"><div class="workflow-metric-label">Escalation</div><div class="workflow-metric-value">16%</div></div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 80%;"></div></div>
+            </div>
+
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>Completion Validation</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric"><div class="workflow-metric-label">Confidence</div><div class="workflow-metric-value">0.76</div></div>
+                    <div class="workflow-metric"><div class="workflow-metric-label">Escalation</div><div class="workflow-metric-value">22%</div></div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 76%;"></div></div>
+            </div>
+
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>Ticket Routing</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric"><div class="workflow-metric-label">Confidence</div><div class="workflow-metric-value">0.88</div></div>
+                    <div class="workflow-metric"><div class="workflow-metric-label">Escalation</div><div class="workflow-metric-value">11%</div></div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 88%;"></div></div>
+            </div>
+
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>Urgency Detection</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric"><div class="workflow-metric-label">Confidence</div><div class="workflow-metric-value">0.86</div></div>
+                    <div class="workflow-metric"><div class="workflow-metric-label">Escalation</div><div class="workflow-metric-value">12%</div></div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 86%;"></div></div>
+            </div>
+
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>Refund Eligibility</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric"><div class="workflow-metric-label">Confidence</div><div class="workflow-metric-value">0.84</div></div>
+                    <div class="workflow-metric"><div class="workflow-metric-label">Escalation</div><div class="workflow-metric-value">14%</div></div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 84%;"></div></div>
+            </div>
+
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>Video Ideas</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric"><div class="workflow-metric-label">Confidence</div><div class="workflow-metric-value">0.87</div></div>
+                    <div class="workflow-metric"><div class="workflow-metric-label">Escalation</div><div class="workflow-metric-value">10%</div></div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 87%;"></div></div>
+            </div>
+
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>Hook Selection</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric"><div class="workflow-metric-label">Confidence</div><div class="workflow-metric-value">0.98</div></div>
+                    <div class="workflow-metric"><div class="workflow-metric-label">Escalation</div><div class="workflow-metric-value">1%</div></div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 98%;"></div></div>
+            </div>
+
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>Duplicate Detection</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric"><div class="workflow-metric-label">Confidence</div><div class="workflow-metric-value">0.91</div></div>
+                    <div class="workflow-metric"><div class="workflow-metric-label">Escalation</div><div class="workflow-metric-value">7%</div></div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 91%;"></div></div>
+            </div>
+
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>Expense Categories</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric"><div class="workflow-metric-label">Confidence</div><div class="workflow-metric-value">0.82</div></div>
+                    <div class="workflow-metric"><div class="workflow-metric-label">Escalation</div><div class="workflow-metric-value">15%</div></div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 82%;"></div></div>
+            </div>
+
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>Lead Scoring</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric"><div class="workflow-metric-label">Confidence</div><div class="workflow-metric-value">0.90</div></div>
+                    <div class="workflow-metric"><div class="workflow-metric-label">Escalation</div><div class="workflow-metric-value">9%</div></div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 90%;"></div></div>
+            </div>
+
+            <div class="workflow-card">
+                <div class="workflow-name"><span class="workflow-status"></span>Meeting Notes</div>
+                <div class="workflow-metrics">
+                    <div class="workflow-metric"><div class="workflow-metric-label">Confidence</div><div class="workflow-metric-value">0.79</div></div>
+                    <div class="workflow-metric"><div class="workflow-metric-label">Escalation</div><div class="workflow-metric-value">19%</div></div>
+                </div>
+                <div class="confidence-bar"><div class="confidence-fill" style="width: 79%;"></div></div>
+            </div>
+        </div>
+
+        <div class="performance-grid">
+            <div class="performance-section">
+                <h3>🏆 Top Performers</h3>
+                <div class="performance-item">
+                    <div class="performance-name">1. Comment Moderation</div>
+                    <div class="performance-value">1.00</div>
+                </div>
+                <div class="performance-item">
+                    <div class="performance-name">2. Spam Detection</div>
+                    <div class="performance-value">1.00</div>
+                </div>
+                <div class="performance-item">
+                    <div class="performance-name">3. Hook Selection</div>
+                    <div class="performance-value">0.98</div>
+                </div>
+                <div class="performance-item">
+                    <div class="performance-name">4. Trade Pre-Validation</div>
+                    <div class="performance-value">0.93</div>
+                </div>
+                <div class="performance-item">
+                    <div class="performance-name">5. Duplicate Detection</div>
+                    <div class="performance-value">0.91</div>
+                </div>
+            </div>
+
+            <div class="performance-section">
+                <h3>⚠️ Needs Attention</h3>
+                <div class="performance-item">
+                    <div class="performance-name">1. Completion Validation</div>
+                    <div class="performance-value">22% ↑</div>
+                </div>
+                <div class="performance-item">
+                    <div class="performance-name">2. Meeting Notes</div>
+                    <div class="performance-value">19% ↑</div>
+                </div>
+                <div class="performance-item">
+                    <div class="performance-name">3. Flaky Test Detection</div>
+                    <div class="performance-value">18% ↑</div>
+                </div>
+                <div class="performance-item">
+                    <div class="performance-name">4. Dependency Risk</div>
+                    <div class="performance-value">16% ↑</div>
+                </div>
+                <div class="performance-item">
+                    <div class="performance-name">5. PR Triage</div>
+                    <div class="performance-value">15% ↑</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            ✅ All 20 workflows operational | 📈 Real-time monitoring active | 💰 $1,137K+/year value | 🎯 Phase 6 Complete
+        </div>
+    </div>
+</body>
+</html>

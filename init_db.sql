@@ -1,62 +1,77 @@
--- Direct schema initialization
--- PostgreSQL will handle the IF NOT EXISTS clauses
+-- Create signals table
+CREATE TABLE IF NOT EXISTS signals (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  agent_id VARCHAR NOT NULL,
+  symbol VARCHAR NOT NULL,
+  signal_type VARCHAR NOT NULL,
+  confidence FLOAT,
+  data JSONB,
+  timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 
--- 1. ORDERS TABLE
-CREATE TABLE IF NOT EXISTS orders (
-  id SERIAL PRIMARY KEY,
-  order_id VARCHAR(255) UNIQUE NOT NULL,
-  symbol VARCHAR(20) NOT NULL,
-  side VARCHAR(10) NOT NULL,
-  quantity DECIMAL(18, 8) NOT NULL,
-  price DECIMAL(18, 8),
-  order_type VARCHAR(20) NOT NULL,
-  status VARCHAR(20) NOT NULL,
-  broker VARCHAR(50) NOT NULL,
+-- Create trades table
+CREATE TABLE IF NOT EXISTS trades (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  symbol VARCHAR NOT NULL,
+  entry_price FLOAT,
+  exit_price FLOAT,
+  position_size FLOAT,
+  profit_loss FLOAT,
+  agent_id VARCHAR,
+  status VARCHAR DEFAULT 'open',
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  expires_at TIMESTAMP,
-  retry_count INT DEFAULT 0,
-  error_message TEXT,
-  INDEX idx_symbol (symbol),
-  INDEX idx_status (status),
-  INDEX idx_broker (broker),
-  INDEX idx_created_at (created_at)
+  closed_at TIMESTAMP
 );
 
--- 2. POSITIONS TABLE
-CREATE TABLE IF NOT EXISTS positions (
-  id SERIAL PRIMARY KEY,
-  symbol VARCHAR(20) NOT NULL,
-  broker VARCHAR(50) NOT NULL,
-  quantity DECIMAL(18, 8) NOT NULL,
-  average_cost DECIMAL(18, 8),
-  current_price DECIMAL(18, 8),
-  unrealized_pnl DECIMAL(18, 8),
-  realized_pnl DECIMAL(18, 8),
-  last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  UNIQUE(symbol, broker),
-  INDEX idx_symbol (symbol),
-  INDEX idx_broker (broker)
+-- Create agent_metrics table
+CREATE TABLE IF NOT EXISTS agent_metrics (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  agent_id VARCHAR NOT NULL,
+  agent_name VARCHAR,
+  total_trades INT DEFAULT 0,
+  profit_loss FLOAT DEFAULT 0,
+  win_rate FLOAT DEFAULT 0,
+  sharpe_ratio FLOAT DEFAULT 0,
+  avg_holding_time INT DEFAULT 0,
+  date DATE DEFAULT CURRENT_DATE,
+  UNIQUE(agent_id, date)
 );
 
--- 3. JOB_QUEUE TABLE
-CREATE TABLE IF NOT EXISTS job_queue (
-  id SERIAL PRIMARY KEY,
-  job_id VARCHAR(255) UNIQUE NOT NULL,
-  job_type VARCHAR(100) NOT NULL,
-  status VARCHAR(50) NOT NULL,
-  payload JSONB NOT NULL,
-  priority INT DEFAULT 0,
-  scheduled_for TIMESTAMP,
-  started_at TIMESTAMP,
-  completed_at TIMESTAMP,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  INDEX idx_status (status),
-  INDEX idx_job_type (job_type),
-  INDEX idx_priority (priority)
+-- Create agent_status table
+CREATE TABLE IF NOT EXISTS agent_status (
+  agent_id VARCHAR PRIMARY KEY,
+  status VARCHAR DEFAULT 'idle',
+  last_execution TIMESTAMP,
+  error_count INT DEFAULT 0
 );
 
--- Verify tables were created
-SELECT 'Database schema initialized successfully!' as status;
-SELECT table_name FROM information_schema.tables WHERE table_schema='public' ORDER BY table_name;
+-- Create dashboard_events table
+CREATE TABLE IF NOT EXISTS dashboard_events (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  type VARCHAR,
+  agent_id VARCHAR,
+  data JSONB,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Create indexes
+CREATE INDEX IF NOT EXISTS idx_signals_timestamp ON signals(timestamp DESC);
+CREATE INDEX IF NOT EXISTS idx_signals_symbol ON signals(symbol);
+CREATE INDEX IF NOT EXISTS idx_trades_agent_id ON trades(agent_id);
+CREATE INDEX IF NOT EXISTS idx_trades_symbol ON trades(symbol);
+CREATE INDEX IF NOT EXISTS idx_dashboard_events_created_at ON dashboard_events(created_at DESC);
+
+-- Create views
+CREATE OR REPLACE VIEW agent_summary AS
+SELECT 
+  m.agent_id,
+  m.agent_name,
+  m.total_trades,
+  m.profit_loss,
+  m.win_rate,
+  m.sharpe_ratio,
+  s.status,
+  s.last_execution
+FROM agent_metrics m
+LEFT JOIN agent_status s ON m.agent_id = s.agent_id;
+

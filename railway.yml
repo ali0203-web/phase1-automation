@@ -1,0 +1,402 @@
+# 🚀 RAILWAY DEPLOYMENT CONFIG - ALL 4 SYSTEMS PARALLEL
+# Deploy simultaneously to production
+# Authority: Full Autonomous | Sept 28, 2026
+
+apiVersion: v1
+kind: DeploymentGroup
+metadata:
+  name: automation-suite
+  namespace: production
+  timestamp: "2026-09-28T00:00:00Z"
+  authority: autonomous-execution
+
+# ============================================================================
+# SERVICE 1: LINKEDIN AUTOMATION
+# ============================================================================
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: linkedin-automation
+  namespace: production
+  labels:
+    system: automation-suite
+    component: content-platform
+
+spec:
+  replicas: 2
+  runtime: node
+  memory: 512MB
+
+  environment:
+    OPENROUTER_API_KEY: ${SECRET_OPENROUTER_KEY}
+    OPENROUTER_MODEL: claude-3-sonnet-20240229
+    LINKEDIN_CLIENT_ID: ${SECRET_LINKEDIN_CLIENT_ID}
+    LINKEDIN_CLIENT_SECRET: ${SECRET_LINKEDIN_CLIENT_SECRET}
+    AIRTABLE_API_KEY: ${SECRET_AIRTABLE_KEY}
+    SLACK_WEBHOOK: ${SECRET_SLACK_WEBHOOK}
+    NODE_ENV: production
+    LOG_LEVEL: info
+
+  buildCommand: npm install && npm run build
+  startCommand: npm start
+
+  healthCheck:
+    endpoint: /health
+    interval: 30s
+    timeout: 5s
+
+  deployment:
+    strategy: rolling
+    maxSurge: 1
+    maxUnavailable: 0
+    timeout: 5m
+
+  networking:
+    port: 3000
+    routes:
+      - path: /linkedin/webhook
+        methods: [POST]
+      - path: /oauth/linkedin
+        methods: [GET]
+      - path: /health
+        methods: [GET]
+
+  monitoring:
+    metrics: [cpu, memory, requests, errors]
+    alertThresholds:
+      error_rate: 5%
+      response_time: 500ms
+      memory: 80%
+
+---
+# ============================================================================
+# SERVICE 2: DISCORD BOT
+# ============================================================================
+apiVersion: v1
+kind: Service
+metadata:
+  name: discord-bot
+  namespace: production
+  labels:
+    system: automation-suite
+    component: community-platform
+
+spec:
+  replicas: 1
+  runtime: node
+  memory: 256MB
+
+  environment:
+    DISCORD_BOT_TOKEN: ${SECRET_DISCORD_BOT_TOKEN}
+    DISCORD_CLIENT_ID: ${SECRET_DISCORD_CLIENT_ID}
+    DISCORD_CLIENT_SECRET: ${SECRET_DISCORD_CLIENT_SECRET}
+    DISCORD_GUILD_ID: ${SECRET_DISCORD_GUILD_ID}
+    NODE_ENV: production
+    LOG_LEVEL: info
+
+  buildCommand: npm install && npm run build
+  startCommand: npm start
+
+  healthCheck:
+    endpoint: /health
+    interval: 30s
+    timeout: 5s
+
+  deployment:
+    strategy: rolling
+    timeout: 5m
+
+  networking:
+    port: 3001
+    routes:
+      - path: /discord/callback
+        methods: [GET]
+      - path: /health
+        methods: [GET]
+      - path: /interactions
+        methods: [POST]
+
+  monitoring:
+    metrics: [cpu, memory, bot-latency, guild-health]
+    alertThresholds:
+      latency: 100ms
+      error_rate: 2%
+
+---
+# ============================================================================
+# SERVICE 3: TRADING AGENT
+# ============================================================================
+apiVersion: v1
+kind: Service
+metadata:
+  name: trading-agent
+  namespace: production
+  labels:
+    system: automation-suite
+    component: market-platform
+
+spec:
+  replicas: 1
+  runtime: python
+  memory: 1024MB
+
+  environment:
+    BINANCE_API_KEY: ${SECRET_BINANCE_API_KEY}
+    BINANCE_API_SECRET: ${SECRET_BINANCE_API_SECRET}
+    BINANCE_TESTNET: "true"
+    IB_ACCOUNT: ${SECRET_IB_ACCOUNT}
+    IB_PAPER_TRADING: "true"
+    REBALANCE_TIME: "08:00"
+    REBALANCE_TIMEZONE: "Asia/Dubai"
+    SLACK_WEBHOOK: ${SECRET_SLACK_WEBHOOK}
+    PYTHON_ENV: production
+    LOG_LEVEL: info
+
+  buildCommand: pip install -r requirements.txt && python compile.py
+  startCommand: python main.py
+
+  healthCheck:
+    endpoint: /health
+    interval: 60s
+    timeout: 10s
+
+  deployment:
+    strategy: rolling
+    timeout: 10m
+
+  networking:
+    port: 5000
+    routes:
+      - path: /health
+        methods: [GET]
+      - path: /trades
+        methods: [GET]
+      - path: /performance
+        methods: [GET]
+
+  scheduling:
+    rebalance:
+      time: "08:00"
+      timezone: "Asia/Dubai"
+      interval: daily
+
+  monitoring:
+    metrics: [cpu, memory, connection-health, trade-latency, pnl]
+    alertThresholds:
+      connection_loss: immediate
+      error_rate: 1%
+      trade_latency: 100ms
+
+---
+# ============================================================================
+# SERVICE 4: SUPABASE REALTIME
+# ============================================================================
+apiVersion: v1
+kind: Service
+metadata:
+  name: supabase-realtime
+  namespace: production
+  labels:
+    system: automation-suite
+    component: data-platform
+
+spec:
+  replicas: 2
+  runtime: postgres
+  memory: 2048MB
+
+  environment:
+    SUPABASE_PROJECT_ID: ${SECRET_SUPABASE_PROJECT_ID}
+    SUPABASE_API_KEY: ${SECRET_SUPABASE_API_KEY}
+    SUPABASE_URL: https://${SECRET_SUPABASE_PROJECT_ID}.supabase.co
+    REALTIME_ENABLED: "true"
+    WEBSOCKET_COMPRESSION: "true"
+    MAX_CONNECTIONS: "1000"
+    POSTGRES_ENV: production
+    LOG_LEVEL: info
+
+  buildCommand: npm install && npm run migrate
+  startCommand: npm start
+
+  healthCheck:
+    endpoint: /health
+    interval: 30s
+    timeout: 5s
+
+  deployment:
+    strategy: rolling
+    maxSurge: 1
+    maxUnavailable: 0
+    timeout: 10m
+
+  networking:
+    port: 3002
+    routes:
+      - path: /realtime
+        methods: [POST]
+      - path: /health
+        methods: [GET]
+
+  database:
+    type: postgresql
+    version: "14"
+    backup:
+      enabled: true
+      frequency: daily
+      retention: 30days
+
+  monitoring:
+    metrics: [cpu, memory, connections, query-latency, replication-lag]
+    alertThresholds:
+      connection_count: 900
+      query_latency: 100ms
+      replication_lag: 5s
+      error_rate: 0.5%
+
+---
+# ============================================================================
+# DEPLOYMENT ORCHESTRATION
+# ============================================================================
+apiVersion: v1
+kind: DeploymentOrchestrator
+metadata:
+  name: automation-suite-orchestrator
+  namespace: production
+
+spec:
+  parallelDeployment: true
+  maxConcurrent: 4
+  failureStrategy: rollback
+
+  services:
+    - name: linkedin-automation
+      order: 1
+      dependencies: []
+      timeout: 5m
+
+    - name: discord-bot
+      order: 1
+      dependencies: []
+      timeout: 5m
+
+    - name: trading-agent
+      order: 1
+      dependencies: []
+      timeout: 10m
+
+    - name: supabase-realtime
+      order: 1
+      dependencies: []
+      timeout: 10m
+
+  healthChecks:
+    timeout: 5m
+    requiredSuccessRate: 100%
+
+  notifications:
+    slack: ${SECRET_SLACK_WEBHOOK}
+    discord: ${SECRET_DISCORD_WEBHOOK}
+    email: automation-alerts@domain.com
+
+  monitoring:
+    enabled: true
+    dashboardUrl: https://api.domain.com/dashboard
+    alertsEnabled: true
+    metricsRetention: 90days
+
+---
+# ============================================================================
+# DEPLOYMENT STATUS & VERIFICATION
+# ============================================================================
+apiVersion: v1
+kind: DeploymentVerification
+metadata:
+  name: automation-suite-verification
+  namespace: production
+
+spec:
+  verifications:
+    - service: linkedin-automation
+      checks:
+        - name: service-running
+          type: http
+          endpoint: /health
+          expectedCode: 200
+
+        - name: openrouter-connection
+          type: api
+          service: openrouter
+          expectedStatus: connected
+
+        - name: airtable-sync
+          type: datasync
+          expectedLatency: <500ms
+
+        - name: slack-alerts
+          type: notification
+          expectedLatency: <1000ms
+
+    - service: discord-bot
+      checks:
+        - name: bot-online
+          type: discord
+          expectedStatus: online
+
+        - name: oauth-active
+          type: oauth
+          expectedStatus: authenticated
+
+        - name: guild-ready
+          type: discord
+          expectedStatus: connected
+
+        - name: latency-check
+          type: latency
+          expectedLatency: <100ms
+
+    - service: trading-agent
+      checks:
+        - name: binance-connection
+          type: api
+          service: binance
+          expectedStatus: connected
+
+        - name: signal-generation
+          type: process
+          expectedStatus: running
+
+        - name: rebalance-scheduled
+          type: scheduler
+          expectedStatus: scheduled
+          expectedTime: "08:00 Dubai"
+
+    - service: supabase-realtime
+      checks:
+        - name: websocket-active
+          type: connection
+          expectedStatus: connected
+
+        - name: database-syncing
+          type: datasync
+          expectedLatency: <100ms
+
+        - name: triggers-loaded
+          type: database
+          expectedStatus: active
+
+  rollback:
+    enabled: true
+    onFailure: automatic
+    previousVersion: stable
+
+status:
+  phase: Deploying
+  startTime: "2026-09-28T00:00:00Z"
+  conditions:
+    - type: DeploymentStarted
+      status: "True"
+    - type: AllServicesDeploying
+      status: "True"
+    - type: HealthChecksRunning
+      status: "True"

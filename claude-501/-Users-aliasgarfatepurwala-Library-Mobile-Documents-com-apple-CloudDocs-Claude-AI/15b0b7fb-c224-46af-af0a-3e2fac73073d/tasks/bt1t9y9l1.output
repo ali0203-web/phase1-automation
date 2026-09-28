@@ -1,0 +1,597 @@
+bfs: error: /Users/aliasgarfatepurwala/.Trash: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Pictures/Photos Library.photoslibrary: Operation not permitted.
+/Users/aliasgarfatepurwala/.npm-global/lib/node_modules/ts-node/dist/tsconfigs.d.ts
+/Users/aliasgarfatepurwala/.npm-global/lib/node_modules/ts-node/dist/tsconfigs.js
+/Users/aliasgarfatepurwala/.npm-global/lib/node_modules/ts-node/dist/configuration.js
+/Users/aliasgarfatepurwala/.npm-global/lib/node_modules/ts-node/dist/configuration.d.ts
+/Users/aliasgarfatepurwala/.npm-global/lib/node_modules/ts-node/dist/tsconfig-schema.d.ts
+/Users/aliasgarfatepurwala/.npm-global/lib/node_modules/ts-node/dist/tsconfig-schema.js
+/Users/aliasgarfatepurwala/.npm-global/lib/node_modules/supabase/dist/supabase.js
+/Users/aliasgarfatepurwala/.npm-global/lib/node_modules/firebase-tools/standalone/config.template.js
+/Users/aliasgarfatepurwala/.npm-global/lib/node_modules/firebase-tools/lib/configstore.js
+/Users/aliasgarfatepurwala/.npm-global/lib/node_modules/firebase-tools/lib/config.js
+/Users/aliasgarfatepurwala/.npm-global/lib/node_modules/firebase-tools/lib/env.js
+/Users/aliasgarfatepurwala/Claude-Data-Vault/projects/web-frameworks/alpine/jest.config.js
+/Users/aliasgarfatepurwala/Claude-Data-Vault/projects/web-frameworks/alpine/cypress.config.js
+/Users/aliasgarfatepurwala/Claude-Data-Vault/projects/web-frameworks/alpine/vitest.config.js
+/Users/aliasgarfatepurwala/Claude-Data-Vault/projects/web-frameworks/inferno/jest.config.js
+/Users/aliasgarfatepurwala/Claude-Data-Vault/projects/web-frameworks/inferno/eslint.config.js
+/Users/aliasgarfatepurwala/Claude-Data-Vault/projects/web-frameworks/inferno/jest.config-nodom.js
+/Users/aliasgarfatepurwala/phase1automation/eslint.config.js
+/Users/aliasgarfatepurwala/phase1automation/vite.config.ts
+/Users/aliasgarfatepurwala/Claude-Data-Vault/projects/web-frameworks/svelte/vitest-xhtml-environment.ts
+bfs: error: /Users/aliasgarfatepurwala/Library/Application Support/MobileSync: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Application Support/CallHistoryTransactions: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Application Support/CloudDocs: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Application Support/com.apple.sharedfilelist: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Application Support/Knowledge: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Application Support/CallHistoryDB: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Application Support/com.apple.avfoundation/Frecents: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Application Support/discord: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Application Support/FileProvider: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Application Support/AddressBook: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Application Support/FaceTime: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Application Support/Microsoft Edge: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Application Support/DifferentialPrivacy: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Application Support/BraveSoftware/Brave-Browser: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Application Support/Google/Chrome: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Assistant/SiriVocabulary: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Daemon Containers: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/CoreFollowUp: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/StatusKit: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/DoNotDisturb: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Accounts: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Safari: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Biome: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/IntelligencePlatform: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/AppleMediaServices: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/DuetExpertCenter: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Cookies: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Sharing: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/com.apple.aiml.instrumentation: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Mail: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Trial: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Autosave Information: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/IdentityServices: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Messages: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/HomeKit: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Caches/familycircled: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Caches/com.apple.HomeKit: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Caches/CloudKit: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Caches/com.apple.Safari: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Caches/com.apple.findmy.imagecache: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Caches/com.apple.ap.adprivacyd: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Caches/com.apple.Safari.SafeBrowsing: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Caches/FamilyCircle: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Caches/com.apple.findmy.fmfcore: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Caches/com.apple.containermanagerd: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Caches/com.apple.homed: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Caches/com.apple.findmy.fmipcore: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Metadata/CoreSpotlight: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Metadata/com.apple.IntelligentSuggestions: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Shortcuts: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Suggestions: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Weather: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/ContainerManager: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/PersonalizationPortrait: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Photos: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.archiveutility: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.VoiceMemos: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Home: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Safari: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.CloudDocs.MobileDocumentsFileProvider: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.mail: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.MobileSMS: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Notes: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.stocks: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.CloudPhotosConfiguration/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.wallpaper.extension.macintosh/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Passwords.PasswordSettingsAppIntentsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.photos.ImageConversionService/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.systempreferences.SpotlightIndexExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.wallpaper.extension.sonoma/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.lighthouse.SAExtensionOrchestrator/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.mediastream.mstreamd/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.StartupDisk.StartupDiskWidgetExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.tips.Widget/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.BKAgentService/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.stocks.detailintents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.safari.SafariFeatureUsageRetentionExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.siri.SiriPrivateLearningAnalytics.SiriUserSegmentation/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.parsec.SafariBrowsingAssistantWorker/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.parallels.desktop.appstore.ExeQLPlugin/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.speech.MacinTalkFramework.MacinTalkAUSP/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.weather.menu/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Home.HomeEnergyWidgets/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.lighthouse.InferenceExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.mobiletimer-framework.MobileTimerIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.CD-DVD-Settings.CDsAndDvDsSettingsIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Photos.StorageManagementExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.QuickTimePlayerX/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.calculator/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.weather.widget/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.speech.MacinTalkFramework.WardaSynthesizer.x86-64/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.platoapp.Plato/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.settings-intents.WallpaperIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.journal.widgets.secure/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.notes.exchangenotesd/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.systempreferences.SettingsImportExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.PassKit.PaymentAuthorizationUIExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Game-Controller-Settings.AppIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/pro.usage.mac/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.cuilingshi.flipclock.FlipClockIntent/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.AccountsUISettings.AppIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.dock.controls/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.preferences.sharing.SharingPrefsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.lighthouse.IFTelemetrySELFIngestor/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/net.whatsapp.WhatsApp/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.CryptoTokenKit.ctkcard.ctkcardtoken/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.ax.KonaTTSSupport.KonaSynthesizer/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.SSMenuAgent/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.photos.VideoConversionService/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.languageassetd/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.PressAndHold/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.quicklook.ui.helper/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Internet-Accounts-Settings.extension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.unilog.search.MacMailSearchLogProcessor/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/net.whatsapp.WhatsApp.Intents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.SiriSetup.SiriSetupSettingsIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Spotlight-Settings.extension.SpotlightSettingsIntentsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Safari.SafariLinkExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/net.whatsapp.WhatsApp.ServiceExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.CoreRoutine.helperservice/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.biome.BiomeStreams.BiomeLighthousePlugin/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.microsoft.Word.widgetextension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.lighthouse.PnROnDeviceWorker/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.mcx.ProfileHelper/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Notes.IntentsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.SiriNCService/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.AvatarUI.AvatarPickerMemojiPicker/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/pro.usage.mac.MacWidgets/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.share.Mail.compose/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.AuthKitUI.AKFollowUpServerUIExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.ClassKit.ClassKitAppIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.siri.ODDIMetricsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.siri.metrics.MetricsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Home.HomeWidget.Interactive/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.UsageTrackingAgent/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Profiles-Settings.intents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.MobileAddressBook.RemoteCatalystPosterExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/org.native.vpninuae.vpn/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Preview/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.microsoft.Powerpoint.widgetextension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.LinkedNotesUIService/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.messages.AssistantExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.microsoft.teams2.widgetextension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Safari.SafariWidgetExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.AquaAppearanceHelper/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.ScreenTimeAppIntentsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.hp.SmartMac/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.STMExtension.Mail/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.settings.Storage.StorageSettingsIntentsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.DiagnosticExtensions.sysdiagnose/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.STMExtension.Developer/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.texttospeech.SiriAUSP/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.WindowManager.controls/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.calculator.CalculatorWidget/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.PhotosUIPrivate.PhotosPosterProvider/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.batteryui.BatterySettingsIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.family.FamilyIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.diskspaced/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.share.AirDrop.send/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.NetworkExtensionSettingsUI.VpnSettingsIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/pro.usage.mac.backgroundservice/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.speech.SpeechSynthesisServerXPC/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.TV.TVCacheExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.cuilingshi.flipclock.FlipClockDesktopWidget/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.geod/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.STMExtension.Applications/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.siri.SiriSuggestionsLightHousePlugin/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Displays-Settings.extension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.AppleMediaServices.FollowUpExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Desktop-Settings.extension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.CryptoTokenKit.pivtoken/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.weather/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.systempreferences.GeneralSettings/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Notes.WidgetExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetIntentsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.PrefPaneSearchIntent/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.stocks.widget/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.STMExtension.GarageBand/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.corerecents.recentsd/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.priml.FedStatsPlugin.Static/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.SiriUI.SiriUISetupXPC/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.DataDetectorsViewService/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.DifferentialPrivacy.TelemetryAggregator/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/341C67B4-A4C0-484A-B40D-D4F9EB70C3E7/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Screen-Time-Settings.extension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.microsoft.Excel/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.hp.PSDrMonitor/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.findmy.FindMyWidgetItems/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.MenuBarAgent/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.routined/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.microsoft.teams2/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.siri.metrics.DevicePropertiesExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.mlhost.CloudWorker/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.donotdisturb.DoNotDisturbAppIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.VoiceMemos.VoiceMemosSettingsWidget/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.safari.SafariUsageRetentionExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.calendar.CalendarFocusConfigurationExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.StorageManagement.CloudStorageHelper/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.microsoft.Outlook.CalendarWidget/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Music.MusicCacheExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.SafariFoundation.CredentialProviderExtensionHelper/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.SoftwareUpdateSettingsExtensionIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.STMExtension.Trash/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.mail.SpotlightIndexExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.siri.metrics.AssetMetricsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.printcenter.PrintCenterWidget/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.shortcuts.ShortcutsWidget/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.ManagedSettings.ManagedSettingsMacOSExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.helpviewer/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.adobe.Acrobat.Pro/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.AccessibilitySettingsWidgetExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.TextEdit/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.journal.widgets/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.dwarvesv.minimalbar/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.parallels.desktop.appstore/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.siri.GMSSELFIngestor/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.microsoft.pasteboard-xpc/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Dictionary/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Music.MusicStorageExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.StoreKit.UIService/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.spotlight.CSExattrCryptoService/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.MailShortcutsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.PlatformSSOToken/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.aiml.UnilogTelemetryWorker/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.siri.metrics.ExperimentationExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.FamilyControlsAgent/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Photos/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.DataDetectorsLocalSources/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.AMSUIPaymentViewService/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.AppleMediaServicesUI.UtilityExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Siri/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.wallpaper.agent.controls/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.QuickLookUIFramework.QLPreviewGenerationExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.siri.ODDIPoirotExperimentationExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.AppStore/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.microsoft.Excel.widgetextension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.LoginUserService/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.UnilogAnalytics/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.STMExtension.iOSFiles/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.systempreferences.InternationalSettingsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.NeptuneOneExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.MailCacheDelete/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.AccessibilitySettingsSearchExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Batteries.BatteriesAvocadoWidgetExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.dwarvesv.LauncherApplication/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.MediaMLPluginApp.MediaMLExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.siri.SiriExtensionsDigestExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.QuickLookThumbnailing.extension.ThumbnailExtension-macOS/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.AutoFillPanelService/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Sound-Settings.SoundIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.TV.TVStorageExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.microsoft.teams2.notificationcenter/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.lighthouse.IFTranscriptSELFIngestor/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.mobilephone/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.wallpaper.extension.sequoia/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.amp.devicesui/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.share.Messages.window/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.photoanalysisd/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.iCloudQuota.ICQFollowup/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.SystemExtensions-Settings.extension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.aiml.mlpt.FedStats.MLHostPlugin/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/B2133AAB-DAF1-473F-BD2B-6A9AF89B596D/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.GenerativePlaygroundApp/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.wallpaper.extension.dynamic/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Spotlight-Settings.extension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/WiseMo.Guest/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.PegasusData/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.MediaExtensions-Settings/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apowersoft.pdfConvert/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.wallpaper.extension.aerials/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.notificationcenterui/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.unilog.SafariSearchUploadWorker/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.controls.display/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Photos.PhotosReliveWidget/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/de.janbolz.silicio.SilicioModernWidget/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.wallpaper.agent/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Keyboard-Settings.extension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.PlaceholderSettingsSearchTermsIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Safari.BrowserDataImportingService/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.AppleAccountIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.AddressBook/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.wallpaper.extension.video/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.unilog.SiriUploadWorker/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.microsoft.Powerpoint/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.siri.ODDFeatureDigestsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.CloudDocsDaemon.StorageManagement/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.messages.StorageManagementExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.iBooksX.DiskSpaceEfficiency/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.amazon.aiv.AIVApp/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.ClassroomDeviceExpert/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/net.whatsapp.WhatsApp.WAAppKitBridgeService/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.FollowUpSettings.FollowUpSettingsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.AMPArtworkAgent/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.aiml.RepackagingWorker/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.aiml.siri.OLEOrchestrator/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.PeopleViewService.PeopleWidget-macOS/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.microsoft.Word/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Time-Machine-Settings-Intents.extension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.SiriMetrics.SiriTurnRestatementExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.findmy.FindMyWidgetPeople/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.reminders.macOSIntentsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.clock.WorldClockWidget/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.maximaapps.printer/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.PeopleViewService.SelectPerson-iOS/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Feedback.DraftingExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.ExtensionsSettings.DefaultExtensionEnablement/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.BiometricsAndPasswordSettingsAppIntentsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.shortcuts.ShortcutLiveActivityWidget/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.STMExtension.OtherUsers/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.accessibility.axassetsd/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.reminders.WidgetExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Safari.CacheDeleteExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.SafariPlatformSupport.Helper/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.microsoft.teams2.respawn/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.systempreferences.AppleIDSettings/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.AMPDeviceDiscoveryAgent/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Notes.SpotlightIndexExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Maps/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.microsoft.teams2.agent/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.desktopsettings.DesktopSettingsIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.tonelibraryd/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.WorkflowUI.WidgetConfigurationExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.MobileSMS.spotlight/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.LookupViewService/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.mlhost.TelemetryWorker/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.settings-intents.mouse/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.speech.MacinTalkFramework.WardaSynthesizer/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.photolibraryd/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.findmy.FindMyNotificationsServiceExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.contacts.donation-agent/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.iCal.CalendarWidgetExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.poirot.MessagesAnalyticsWorker/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.ScreenTimeAgent/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.LinkPresentation.LinkSnapshotGeneratorService/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.FaceTime/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.wallpaper.extension.gradient/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.share.System.add-to-iphoto/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.LighthouseBitacoraFramework.BitacoraWorker/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.wifi-settings-extension.intents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.podcasts.MacPodcastsStorageExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.aiml.mlpt.FedStats.MLHostPluginClassB/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.aiml.siri.SiriLogProcessor/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.controlcenter.ControlCenterSettingsIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.lighthouse.BiomeSELFIngestor/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.settings-intents.trackpad/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.ExtensionsSettings.LegacyPluginEnablementExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.StorageManagement.MessagesHelper/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.WorkflowKit.ShortcutsViewService/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.systempreferences.KeyboardSettingsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.PlatformSSO.AccessKey/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.microsoft.rdc.macos/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.windowmanager.StageManagerOnboarding/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.controls.screenshot/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.PhotoBooth/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.hp.PSDrMonitorHelper/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.sharing.ShareSheetUI/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.quicklook.QuickLookUIService/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.speech.MacinTalkFramework.WardaSynthesizer.arm64/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.cuilingshi.flipclock/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.siri.media-indexer/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.unilog.SafariFeatureUploadWorker/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.wallpaper.extension.image/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.siri.ODDIPoirotMetricsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/cx.c3.theunarchiver/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.calendar.CalendarIntentsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.siri.analytics.SAMaintenance/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Photos.PhotosFileProvider/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.FaceTime.FaceTimeNotificationCenterService/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.net.gochatmessenger.app.onesignal: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.stocks-news: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.ScreenTime: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.siri.GMSSELFIngestor: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.siri.findmy: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.servicesanalytics: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.photolibraryd.private: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/UBF8T346G9.com.microsoft.oneauth: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.weather: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/com.apple.systempreferences.cache: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.feedbacklogger: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/2DC432GLL2.com.openai.sky.CUAService: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.icloud.findmydeviced: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/3K4R6ZGH22.group.pro.usage.mac: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/com.apple.icloudwebd: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.BluetoothSettingsApp.BluetoothSettingsAppIntentsWidget/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.usernoted: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.VoiceMemos.shared: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.contacts: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/.SiriTodayViewExtension: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.secure-control-center-preferences: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.chronod: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.assistant.shared.backedup: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.U5SR49N3PT.only.if.Amphetamine: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.SuggestedImage.SharedSecureContainer: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.net.whatsapp.WhatsApp: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/com.apple.MenuBar: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.net.whatsapp.family: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/com.apple.MailPersonaStorage: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/com.apple.SafariFeatureUploadWorker: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/6HB5Y2QTA3.ScanToComputerAppGroup: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.private.translation: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.FullKeyboardAccess: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.feedback: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.net.whatsapp.WhatsAppSMB.shared: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.siri.inference: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.telephonyutilities.callservicesd: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.intelligenceflow: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/UBF8T346G9.OfficeOsfWebHost: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.swtransparency: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/6HB5Y2QTA3.com.hp.SmartMac: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.coreservices.useractivityd: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/com.apple.siri.ODDIPoirotMetricsExtension: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.ArchiveUtility.PKSignedContainer: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.accessibility.voicebanking: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.icloud.searchpartyuseragent: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.siri.referenceResolution: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.stocks: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.studentd: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.ManagedSettings: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/UBF8T346G9.OfficeWordWidget: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.sharingd: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/74J34U3R6X.com.apple.iWork: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.printtool: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.corerepair: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.news: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.net.whatsapp.WhatsApp.shared: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.InputAnalytics.SecureContainer: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.mobileslideshow.PhotosFileProvider: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/UBF8T346G9.ms: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/com.apple.siri.ODDExperimentationExtension: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.storekit: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.scopedbookmarkagent: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/5A4RE8SF68.com.tencent.xinWeChat: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.appstoreagent: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.portrait.BackgroundReplacement: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/UBF8T346G9.com.microsoft.rdc: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/com.apple.SafariSearchUploadWorker: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.globaldelight.Boom2Remote: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.icloud.fmfcore: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.siri.sirisuggestions: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/com.apple.siri.ODDFeatureDigestsExtension: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.poirot.MessagesAnalyticsWorker: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.liveactivitiesd: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.KerberosExtension: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.helpviewer.content: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/SSN54RC6R9.group.org.native.vpninuae.vpn.macos: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.amsondevicestoraged: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.GenerativePlayground: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.SiriTTS: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/UBF8T346G9.OneDriveStandaloneSuite: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.assistant.shared: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.iBooks: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.notes.import: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.calendar: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/UBF8T346G9.OfficeExcelWidget: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.newsd: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.ip.redirects: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.siri.userfeedbacklearning: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.gamecenter: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.tips: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/com.apple.poirot.poirot_tool: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/UBF8T346G9.Office.Excel.WidgetExtension: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/UBF8T346G9.Office: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.loginwindow.persistent-apps: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.spotlight: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/com.apple.bluetooth.services.cloud/CachedRecords/SoundProfileAsset: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Saved Application State/com.easeus.datarecoverywizard.savedState: Permission denied.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.printcenter: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.controlcenter: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/FZWUNM824K.groupXvpnSharekvdb: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.siri.remembers: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.notes: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/JQ525L2MZD.com.adobe.NGL: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/com.apple.stickersd.group: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/UBF8T346G9.OfficePPTWidget: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/UBF8T346G9.OfficeOneDriveSyncIntegration: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/com.apple.spotlightui: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/243LU875E5.groups.com.apple.podcasts: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/com.apple.siri.SiriExtensionsDigestExtension: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.UserNotifications: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/4C6364ACXT.com.parallels.desktop.appstore: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.tipsnext: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/57T9237FN3.desktop.WhatsApp: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.FileProvider.DomainCaching: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/com.apple.messages: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.syncservices2: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.moments: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.NetworkAuthorization.ServerMarkers: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/com.apple.icloud.searchpartyd.container.appGroup: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.Safari.SandboxBroker: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.unilog.SearchUploadWorker/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/5BD75267VR.group.de.janbolz.silicio.widget: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.transparency: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.webkit.webpushd: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.facebook.family: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.reminders: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.shortcuts: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.people: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.inputmethod.chineseim: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/5BD75267VR.group.de.janbolz.silicio.shared: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/2N35YUC83U.com.rockysandstudio.RSSAppKit: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/com.apple.MessagesLegacyTransferArchive: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/UBF8T346G9.IpcD: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/UBF8T346G9.group.com.microsoft.shared: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.findmy.findmylocateagent: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.mail: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/com.apple.bird: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.DeviceActivity: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.net.whatsapp.WhatsApp.private: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.PegasusData: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.amazon.aiv.AIVApp: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.mobiletimerd: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/6HB5Y2QTA3.com.psdr.services: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/4C6364ACXT.pd: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.Journal: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/com.apple.Home.group: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.iCloudDrive: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.managedappdistributionagent: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.ax.MauiTTSSupport.MauiAUSP/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.FaceTime: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.spinytel.redCard: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.is.workflow.my.app: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.energykit: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.CloudDocs: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.freeform: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/com.apple.PreviewLegacySignaturesConversion: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.rapportd: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.ae.gochatmessenger: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.siri.ASR.shared: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.notesdebug: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.replicatord: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.Photos.PhotosFileProvider: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.icloud.fmipcore: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.shein.appextension: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/UBF8T346G9.com.microsoft.teams: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.UnilogAnalytics: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.AppleSpell: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.cuilingshi.flipclock: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.fskit.settings: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.mlhost: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.CoreSpeech: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.FamilyControls: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.Maps: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.icloudMCCKit: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.PegasusConfiguration: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.icloud.fm: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/UBF8T346G9.com.microsoft.entrabroker: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.com.apple.ScreenContinuityServices: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Group Containers/group.is.workflow.shortcuts: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Home.HomeWidgetIntentsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.weather.WeatherIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.AirPlayUIAgent/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.GameCenter.Settings.SearchExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.siri.ODDIExperimentationExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.systempreferences/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.notifications.NotificationsSettingsIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.CloudDocs.iCloudDriveFileProvider/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.siri.metrics.AssetMetrics/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.VoiceMemos.RecordWidget/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.parsec.SafariAssistantWorker/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.OSDUIHelper/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.podcasts.widget/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.contacts.ContactsCoreSpotlightExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/8390DB9C-4FAF-4F09-A14A-2ECFFF6607B9/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.settings-intents.DateTimeIntents/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.wallpaper.extension.legacy/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.microsoft.Outlook/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.voicebankingd/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.fskit.ModuleEnablement/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.ScreenContinuity/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.ContactsUI.MonogramPosterExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.CalendarWidget.IntentsExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.MobileSMS.MessagesActionExtension/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.Family/Data: Operation not permitted.
+bfs: error: /Users/aliasgarfatepurwala/Library/Containers/com.apple.mediaanalysisd/Data: Operation not permitted.

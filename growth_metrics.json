@@ -1,0 +1,113 @@
+{
+  "monitoring_started": "2026-09-28T07:25:04.327851",
+  "platforms": {
+    "discord": {
+      "members": 15,
+      "messages": 4,
+      "engagement": 12
+    },
+    "twitter": {
+      "followers": 50,
+      "impressions": 500,
+      "engagement": 0
+    },
+    "reddit": {
+      "karma": 30,
+      "posts": 2,
+      "comments": 0
+    },
+    "github": {
+      "stars": 150,
+      "discussions": 20,
+      "forks": 5
+    },
+    "youtube": {
+      "subscribers": 0,
+      "views": 0,
+      "watch_hours": 0
+    },
+    "linkedin": {
+      "followers": 10,
+      "posts": 0,
+      "engagement": 3
+    },
+    "email": {
+      "subscribers": 0,
+      "open_rate": 0
+    },
+    "hashnode": {
+      "followers": 0,
+      "articles": 0,
+      "views": 0
+    },
+    "tiktok": {
+      "followers": 0,
+      "views": 0,
+      "shares": 0
+    },
+    "bluesky": {
+      "followers": 0,
+      "posts": 0
+    }
+  },
+  "daily_summaries": [
+    {
+      "date": "2026-09-28",
+      "time": "2026-09-28T07:25:04.328060",
+      "total_reach": 75,
+      "engagement_rate": 20.0,
+      "community_health": "EARLY_STAGE",
+      "platforms": {
+        "discord": {
+          "members": 15,
+          "messages": 4,
+          "engagement": 12
+        },
+        "twitter": {
+          "followers": 50,
+          "impressions": 500,
+          "engagement": 0
+        },
+        "reddit": {
+          "karma": 30,
+          "posts": 2,
+          "comments": 0
+        },
+        "github": {
+          "stars": 150,
+          "discussions": 20,
+          "forks": 5
+        },
+        "youtube": {
+          "subscribers": 0,
+          "views": 0,
+          "watch_hours": 0
+        },
+        "linkedin": {
+          "followers": 10,
+          "posts": 0,
+          "engagement": 3
+        },
+        "email": {
+          "subscribers": 0,
+          "open_rate": 0
+        },
+        "hashnode": {
+          "followers": 0,
+          "articles": 0,
+          "views": 0
+        },
+        "tiktok": {
+          "followers": 0,
+          "views": 0,
+          "shares": 0
+        },
+        "bluesky": {
+          "followers": 0,
+          "posts": 0
+        }
+      }
+    }
+  ],
+  "hourly_updates": []
+}

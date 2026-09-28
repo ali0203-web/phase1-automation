@@ -1,0 +1,192 @@
+{
+  "bot_name": "Trading OS#4607",
+  "status": "LIVE",
+  "started_at": "2026-09-28T07:24:40.115232",
+  "activities": [
+    {
+      "timestamp": "2026-09-28T07:24:40.115358",
+      "member": "Alex",
+      "action": "joined",
+      "welcome_dm": "Welcome to the AI Systems Engineer Community, Alex! \ud83c\udf89 Check #introductions and #resources to get started.",
+      "type": "member_join"
+    },
+    {
+      "timestamp": "2026-09-28T07:24:40.616313",
+      "member": "Jordan",
+      "action": "joined",
+      "welcome_dm": "Welcome to the AI Systems Engineer Community, Jordan! \ud83c\udf89 Check #introductions and #resources to get started.",
+      "type": "member_join"
+    },
+    {
+      "timestamp": "2026-09-28T07:24:41.119895",
+      "member": "Sam",
+      "action": "joined",
+      "welcome_dm": "Welcome to the AI Systems Engineer Community, Sam! \ud83c\udf89 Check #introductions and #resources to get started.",
+      "type": "member_join"
+    },
+    {
+      "timestamp": "2026-09-28T07:24:41.621903",
+      "member": "Casey",
+      "action": "joined",
+      "welcome_dm": "Welcome to the AI Systems Engineer Community, Casey! \ud83c\udf89 Check #introductions and #resources to get started.",
+      "type": "member_join"
+    },
+    {
+      "timestamp": "2026-09-28T07:24:42.127363",
+      "member": "Taylor",
+      "action": "joined",
+      "welcome_dm": "Welcome to the AI Systems Engineer Community, Taylor! \ud83c\udf89 Check #introductions and #resources to get started.",
+      "type": "member_join"
+    },
+    {
+      "timestamp": "2026-09-28T07:24:42.632826",
+      "user": "Alex",
+      "message": "Tell me about curriculum",
+      "type": "message_received"
+    },
+    {
+      "timestamp": "2026-09-28T07:24:42.633111",
+      "bot": "Trading OS#4607",
+      "response": "Great question! Our 14-week curriculum covers ML Systems Design, Data Engineering, Cloud Infrastructure, Deployment, Monitoring, and Advanced Optimization. Real production projects, real career progression from $80K\u2192$600K+. Check #resources for details!",
+      "trigger": "curriculum",
+      "type": "auto_response"
+    },
+    {
+      "timestamp": "2026-09-28T07:24:43.637541",
+      "user": "Jordan",
+      "message": "What's the career progression like?",
+      "type": "message_received"
+    },
+    {
+      "timestamp": "2026-09-28T07:24:43.637902",
+      "bot": "Trading OS#4607",
+      "response": "Career progression in AI engineering: Year 1: $80K-$120K (junior), Year 3-4: $200K-$300K (senior), Year 5+: $400K-$600K+ (principal). The gap? Real production systems. That's what we teach!",
+      "trigger": "career",
+      "type": "auto_response"
+    },
+    {
+      "timestamp": "2026-09-28T07:24:44.642888",
+      "user": "Sam",
+      "message": "I need help getting started",
+      "type": "message_received"
+    },
+    {
+      "timestamp": "2026-09-28T07:24:44.643397",
+      "bot": "Trading OS#4607",
+      "response": "Welcome! Here to help. 1\ufe0f\u20e3 Introduce yourself in #introductions 2\ufe0f\u20e3 Check #resources for curriculum 3\ufe0f\u20e3 Ask questions in #questions 4\ufe0f\u20e3 Share wins in #wins. Let's build amazing AI systems together!",
+      "trigger": "help",
+      "type": "auto_response"
+    },
+    {
+      "timestamp": "2026-09-28T07:24:45.645335",
+      "user": "Casey",
+      "message": "curriculum overview please",
+      "type": "message_received"
+    },
+    {
+      "timestamp": "2026-09-28T07:24:45.645707",
+      "bot": "Trading OS#4607",
+      "response": "Great question! Our 14-week curriculum covers ML Systems Design, Data Engineering, Cloud Infrastructure, Deployment, Monitoring, and Advanced Optimization. Real production projects, real career progression from $80K\u2192$600K+. Check #resources for details!",
+      "trigger": "curriculum",
+      "type": "auto_response"
+    },
+    {
+      "timestamp": "2026-09-28T07:29:46.935797",
+      "member": "Alex",
+      "action": "joined",
+      "welcome_message": "Hey Alex! \ud83c\udf89\n\nWelcome to the AI Systems Engineer community. Real quick - this isn't your typical Discord.\n\nWe're a group of people actually building production systems. Not studying. Not taking another course. Actually shipping.\n\nCheck #introductions and tell us:\n- Who you are\n- Where you are in your journey\n- What you want to build\n\nThen dive into #questions or #resources. We're here to help.\n\nLet's build something real together.",
+      "type": "member_join"
+    },
+    {
+      "timestamp": "2026-09-28T07:29:46.936128",
+      "member": "Jordan",
+      "action": "joined",
+      "welcome_message": "Hey Jordan! \ud83c\udf89\n\nWelcome to the AI Systems Engineer community. Real quick - this isn't your typical Discord.\n\nWe're a group of people actually building production systems. Not studying. Not taking another course. Actually shipping.\n\nCheck #introductions and tell us:\n- Who you are\n- Where you are in your journey\n- What you want to build\n\nThen dive into #questions or #resources. We're here to help.\n\nLet's build something real together.",
+      "type": "member_join"
+    },
+    {
+      "timestamp": "2026-09-28T07:29:46.936369",
+      "member": "Sam",
+      "action": "joined",
+      "welcome_message": "Hey Sam! \ud83c\udf89\n\nWelcome to the AI Systems Engineer community. Real quick - this isn't your typical Discord.\n\nWe're a group of people actually building production systems. Not studying. Not taking another course. Actually shipping.\n\nCheck #introductions and tell us:\n- Who you are\n- Where you are in your journey\n- What you want to build\n\nThen dive into #questions or #resources. We're here to help.\n\nLet's build something real together.",
+      "type": "member_join"
+    },
+    {
+      "timestamp": "2026-09-28T07:29:46.937100",
+      "member": "Casey",
+      "action": "joined",
+      "welcome_message": "Hey Casey! \ud83c\udf89\n\nWelcome to the AI Systems Engineer community. Real quick - this isn't your typical Discord.\n\nWe're a group of people actually building production systems. Not studying. Not taking another course. Actually shipping.\n\nCheck #introductions and tell us:\n- Who you are\n- Where you are in your journey\n- What you want to build\n\nThen dive into #questions or #resources. We're here to help.\n\nLet's build something real together.",
+      "type": "member_join"
+    },
+    {
+      "timestamp": "2026-09-28T07:29:46.937475",
+      "member": "Taylor",
+      "action": "joined",
+      "welcome_message": "Hey Taylor! \ud83c\udf89\n\nWelcome to the AI Systems Engineer community. Real quick - this isn't your typical Discord.\n\nWe're a group of people actually building production systems. Not studying. Not taking another course. Actually shipping.\n\nCheck #introductions and tell us:\n- Who you are\n- Where you are in your journey\n- What you want to build\n\nThen dive into #questions or #resources. We're here to help.\n\nLet's build something real together.",
+      "type": "member_join"
+    },
+    {
+      "timestamp": "2026-09-28T07:29:46.937791",
+      "user": "Alex",
+      "message": "Tell me about the curriculum",
+      "type": "message_received"
+    },
+    {
+      "timestamp": "2026-09-28T07:29:46.937855",
+      "bot": "Trading OS#4607",
+      "response_to": "Alex",
+      "trigger": "curriculum",
+      "type": "humanized_response",
+      "message_preview": "Great question! Our 14-week curriculum covers ML Systems Design, Data Engineering, Cloud Infrastruct"
+    },
+    {
+      "timestamp": "2026-09-28T07:29:46.938088",
+      "user": "Jordan",
+      "message": "What about career progression?",
+      "type": "message_received"
+    },
+    {
+      "timestamp": "2026-09-28T07:29:46.938105",
+      "bot": "Trading OS#4607",
+      "response_to": "Jordan",
+      "trigger": "career",
+      "type": "humanized_response",
+      "message_preview": "Career progression in AI engineering: Year 1: $80K-$120K (junior), Year 3-4: $200K-$300K (senior), Y"
+    },
+    {
+      "timestamp": "2026-09-28T07:29:46.938282",
+      "user": "Sam",
+      "message": "I'm new, need help",
+      "type": "message_received"
+    },
+    {
+      "timestamp": "2026-09-28T07:29:46.938297",
+      "bot": "Trading OS#4607",
+      "response_to": "Sam",
+      "trigger": "help",
+      "type": "humanized_response",
+      "message_preview": "Welcome! Here to help. 1\ufe0f\u20e3 Introduce yourself in #introductions 2\ufe0f\u20e3 Check #resources for curriculum "
+    },
+    {
+      "timestamp": "2026-09-28T07:29:46.938576",
+      "user": "Casey",
+      "message": "Curious about the curriculum path",
+      "type": "message_received"
+    },
+    {
+      "timestamp": "2026-09-28T07:29:46.938593",
+      "bot": "Trading OS#4607",
+      "response_to": "Casey",
+      "trigger": "curriculum",
+      "type": "humanized_response",
+      "message_preview": "Great question! Our 14-week curriculum covers ML Systems Design, Data Engineering, Cloud Infrastruct"
+    }
+  ],
+  "members_count": 10,
+  "engagement_score": 8,
+  "auto_responses": {
+    "curriculum": "Great question! Our 14-week curriculum covers ML Systems Design, Data Engineering, Cloud Infrastructure, Deployment, Monitoring, and Advanced Optimization. Real production projects, real career progression from $80K\u2192$600K+. Check #resources for details!",
+    "career": "Career progression in AI engineering: Year 1: $80K-$120K (junior), Year 3-4: $200K-$300K (senior), Year 5+: $400K-$600K+ (principal). The gap? Real production systems. That's what we teach!",
+    "help": "Welcome! Here to help. 1\ufe0f\u20e3 Introduce yourself in #introductions 2\ufe0f\u20e3 Check #resources for curriculum 3\ufe0f\u20e3 Ask questions in #questions 4\ufe0f\u20e3 Share wins in #wins. Let's build amazing AI systems together!"
+  }
+}

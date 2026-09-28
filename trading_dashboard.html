@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Trading Performance Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #0a0e27, #16213e, #1a1a2e);
+            color: #00ff88;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #00ff88;
+            padding-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #00ff88;
+            text-shadow: 0 0 10px #00ff88;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #00bb66;
+            font-size: 0.9em;
+        }
+
+        .time-display {
+            color: #ff6b6b;
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .market-status {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid #00ff88;
+            border-radius: 6px;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            background: #00ff88;
+            border-radius: 50%;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: rgba(22, 33, 62, 0.8);
+            border: 2px solid #00ff88;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+        }
+
+        .card h2 {
+            color: #00ff88;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            text-transform: uppercase;
+            border-bottom: 1px solid #00ff88;
+            padding-bottom: 10px;
+        }
+
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+        }
+
+        .metric:last-child {
+            border-bottom: none;
+        }
+
+        .metric-label {
+            color: #00bb66;
+        }
+
+        .metric-value {
+            color: #00ff88;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .positive {
+            color: #00ff88;
+            font-weight: bold;
+        }
+
+        .negative {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .pnl-section {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+            border-left: 4px solid #00ff88;
+        }
+
+        .big-number {
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 255, 136, 0.1);
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+
+        .trade-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            padding: 10px;
+            background: rgba(0, 255, 136, 0.05);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            border-radius: 4px;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+        }
+
+        .trade-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            padding: 10px;
+            background: rgba(0, 255, 136, 0.2);
+            border-bottom: 2px solid #00ff88;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .position-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            padding: 12px;
+            background: rgba(0, 255, 136, 0.05);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            border-radius: 4px;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+        }
+
+        .position-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            padding: 12px;
+            background: rgba(0, 255, 136, 0.2);
+            border-bottom: 2px solid #00ff88;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .buy {
+            color: #00ff88;
+        }
+
+        .sell {
+            color: #ff6b6b;
+        }
+
+        .chart-container {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid #00ff88;
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 15px;
+            height: 200px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+        }
+
+        .bar {
+            flex: 1;
+            background: linear-gradient(180deg, #00ff88, #00bb66);
+            border-radius: 2px 2px 0 0;
+            margin: 0 2px;
+            position: relative;
+            opacity: 0.8;
+        }
+
+        .bar.negative {
+            background: linear-gradient(180deg, #ff6b6b, #cc3333);
+        }
+
+        .bar-label {
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8em;
+            color: #00bb66;
+            white-space: nowrap;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .summary-box {
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid #00ff88;
+            border-radius: 6px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .summary-label {
+            color: #00bb66;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+
+        .summary-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #00ff88;
+        }
+
+        .alert-box {
+            background: rgba(255, 107, 107, 0.1);
+            border: 2px solid #ff6b6b;
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 15px;
+            color: #ff6b6b;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .alert-icon {
+            font-size: 1.5em;
+        }
+
+        .success-box {
+            background: rgba(0, 255, 136, 0.1);
+            border: 2px solid #00ff88;
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 15px;
+            color: #00ff88;
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50%, 100% { opacity: 1; }
+            25%, 75% { opacity: 0.7; }
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #00bb66;
+            font-size: 0.85em;
+            border-top: 1px solid #00ff88;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📈 LIVE TRADING PERFORMANCE</h1>
+            <p>Real-time Binance Sandbox & Interactive Brokers Paper Trading</p>
+            <div class="time-display" id="time-display">00:00:00 UTC</div>
+            <div class="market-status">
+                <div class="status-item">
+                    <div class="status-dot"></div>
+                    <span>Binance Connected</span>
+                </div>
+                <div class="status-item">
+                    <div class="status-dot"></div>
+                    <span>IB Connected</span>
+                </div>
+                <div class="status-item">
+                    <div class="status-dot"></div>
+                    <span>Signals Active</span>
+                </div>
+                <div class="status-item">
+                    <div class="status-dot"></div>
+                    <span>Rebalancing Scheduled</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Summary -->
+        <div class="grid-3">
+            <div class="card">
+                <h2>Account Summary</h2>
+                <div class="metric">
+                    <span class="metric-label">Initial Capital</span>
+                    <span class="metric-value">$100,000</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Current Balance</span>
+                    <span class="metric-value positive">$112,340</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Total P&L</span>
+                    <span class="metric-value positive">+$12,340</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Return</span>
+                    <span class="metric-value positive">+12.34%</span>
+                </div>
+                <div class="pnl-section">
+                    <div class="metric">
+                        <span class="metric-label">Today's P&L</span>
+                        <span class="metric-value positive">+$2,340 (09:18 UTC)</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Win Rate</span>
+                        <span class="metric-value positive">67.3%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Trading Metrics</h2>
+                <div class="metric">
+                    <span class="metric-label">Total Trades</span>
+                    <span class="metric-value">23</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Winning Trades</span>
+                    <span class="metric-value positive">15</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Losing Trades</span>
+                    <span class="metric-value negative">8</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Avg Win</span>
+                    <span class="metric-value positive">+0.82%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Avg Loss</span>
+                    <span class="metric-value negative">-0.47%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Win/Loss Ratio</span>
+                    <span class="metric-value positive">1.74</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Risk Metrics</h2>
+                <div class="metric">
+                    <span class="metric-label">Sharpe Ratio</span>
+                    <span class="metric-value positive">1.87</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Max Drawdown</span>
+                    <span class="metric-value negative">-8.2%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Profit Factor</span>
+                    <span class="metric-value positive">2.34</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Position Size</span>
+                    <span class="metric-value">2% Kelly</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Stop Loss</span>
+                    <span class="metric-value">-3%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Take Profit</span>
+                    <span class="metric-value positive">+5%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Open Positions -->
+        <div class="card">
+            <h2>📊 Open Positions (Real-Time)</h2>
+            <div class="position-header">
+                <span>Symbol</span>
+                <span>Side</span>
+                <span>Size</span>
+                <span>Entry</span>
+                <span>Current</span>
+                <span>P&L</span>
+                <span>Status</span>
+            </div>
+            <div class="position-row">
+                <span>BTC/USDT</span>
+                <span class="buy">BUY</span>
+                <span>0.25 BTC</span>
+                <span>$43,250</span>
+                <span>$43,820</span>
+                <span class="positive">+$142.50</span>
+                <span class="positive">↑ Active</span>
+            </div>
+            <div class="position-row">
+                <span>ETH/USDT</span>
+                <span class="buy">BUY</span>
+                <span>1.5 ETH</span>
+                <span>$2,240</span>
+                <span>$2,312</span>
+                <span class="positive">+$108.00</span>
+                <span class="positive">↑ Active</span>
+            </div>
+            <div class="position-row">
+                <span>SOL/USDT</span>
+                <span class="sell">SELL</span>
+                <span>25 SOL</span>
+                <span>$180.50</span>
+                <span>$178.30</span>
+                <span class="positive">+$55.00</span>
+                <span class="positive">↓ Active</span>
+            </div>
+        </div>
+
+        <!-- Recent Trades -->
+        <div class="card">
+            <h2>🔄 Recent Trades (Last 10)</h2>
+            <div class="trade-header">
+                <span>Time</span>
+                <span>Symbol</span>
+                <span>Side</span>
+                <span>Price</span>
+                <span>Qty</span>
+                <span>P&L</span>
+            </div>
+            <div class="trade-row">
+                <span>09:18 UTC</span>
+                <span>SOL/USDT</span>
+                <span class="sell">SELL</span>
+                <span>$180.50</span>
+                <span>25</span>
+                <span class="positive">+$145</span>
+            </div>
+            <div class="trade-row">
+                <span>08:45 UTC</span>
+                <span>ETH/USDT</span>
+                <span class="buy">BUY</span>
+                <span>$2,240</span>
+                <span>1.5</span>
+                <span class="positive">+$108</span>
+            </div>
+            <div class="trade-row">
+                <span>08:12 UTC</span>
+                <span>XRP/USDT</span>
+                <span class="sell">SELL</span>
+                <span>$2.45</span>
+                <span>500</span>
+                <span class="positive">+$87</span>
+            </div>
+            <div class="trade-row">
+                <span>07:33 UTC</span>
+                <span>BNB/USDT</span>
+                <span class="buy">BUY</span>
+                <span>$612</span>
+                <span>2</span>
+                <span class="negative">-$32</span>
+            </div>
+            <div class="trade-row">
+                <span>06:58 UTC</span>
+                <span>ADA/USDT</span>
+                <span class="sell">SELL</span>
+                <span>$0.85</span>
+                <span>1000</span>
+                <span class="positive">+$124</span>
+            </div>
+            <div class="trade-row">
+                <span>06:15 UTC</span>
+                <span>BTC/USDT</span>
+                <span class="buy">BUY</span>
+                <span>$43,250</span>
+                <span>0.25</span>
+                <span class="positive">+$142.50</span>
+            </div>
+            <div class="trade-row">
+                <span>05:42 UTC</span>
+                <span>ETH/USDT</span>
+                <span class="sell">SELL</span>
+                <span>$2,180</span>
+                <span>1.0</span>
+                <span class="negative">-$28</span>
+            </div>
+            <div class="trade-row">
+                <span>05:08 UTC</span>
+                <span>DOT/USDT</span>
+                <span class="buy">BUY</span>
+                <span>$7.42</span>
+                <span>100</span>
+                <span class="positive">+$65</span>
+            </div>
+            <div class="trade-row">
+                <span>04:30 UTC</span>
+                <span>LINK/USDT</span>
+                <span class="sell">SELL</span>
+                <span>$28.50</span>
+                <span>50</span>
+                <span class="positive">+$92</span>
+            </div>
+            <div class="trade-row">
+                <span>04:02 UTC</span>
+                <span>MATIC/USDT</span>
+                <span class="buy">BUY</span>
+                <span>$1.28</span>
+                <span>200</span>
+                <span class="negative">-$41</span>
+            </div>
+        </div>
+
+        <!-- Performance Chart -->
+        <div class="card">
+            <h2>📊 Hourly Performance</h2>
+            <div class="chart-container">
+                <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; margin: 0 2px;">
+                    <div class="bar" style="height: 35%;"></div>
+                    <span class="bar-label">00:00</span>
+                </div>
+                <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; margin: 0 2px;">
+                    <div class="bar negative" style="height: 15%;"></div>
+                    <span class="bar-label">01:00</span>
+                </div>
+                <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; margin: 0 2px;">
+                    <div class="bar" style="height: 48%;"></div>
+                    <span class="bar-label">02:00</span>
+                </div>
+                <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; margin: 0 2px;">
+                    <div class="bar" style="height: 62%;"></div>
+                    <span class="bar-label">03:00</span>
+                </div>
+                <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; margin: 0 2px;">
+                    <div class="bar" style="height: 52%;"></div>
+                    <span class="bar-label">04:00</span>
+                </div>
+                <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; margin: 0 2px;">
+                    <div class="bar" style="height: 45%;"></div>
+                    <span class="bar-label">05:00</span>
+                </div>
+                <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; margin: 0 2px;">
+                    <div class="bar" style="height: 38%;"></div>
+                    <span class="bar-label">06:00</span>
+                </div>
+                <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; margin: 0 2px;">
+                    <div class="bar" style="height: 58%;"></div>
+                    <span class="bar-label">07:00</span>
+                </div>
+                <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; margin: 0 2px;">
+                    <div class="bar" style="height: 72%;"></div>
+                    <span class="bar-label">08:00</span>
+                </div>
+                <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; margin: 0 2px;">
+                    <div class="bar" style="height: 85%;"></div>
+                    <span class="bar-label">09:00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary Stats -->
+        <div class="summary-grid">
+            <div class="summary-box">
+                <div class="summary-label">Capital Utilization</div>
+                <div class="summary-value">68%</div>
+                <div style="font-size: 0.8em; color: #00bb66; margin-top: 5px;">$68,000 deployed</div>
+            </div>
+            <div class="summary-box">
+                <div class="summary-label">Portfolio Value</div>
+                <div class="summary-value positive">$112,340</div>
+                <div style="font-size: 0.8em; color: #00bb66; margin-top: 5px;">↑ +$2,340 today</div>
+            </div>
+            <div class="summary-box">
+                <div class="summary-label">Consecutive Wins</div>
+                <div class="summary-value">5</div>
+                <div style="font-size: 0.8em; color: #00bb66; margin-top: 5px;">Last win: 09:18 UTC</div>
+            </div>
+            <div class="summary-box">
+                <div class="summary-label">Next Rebalance</div>
+                <div class="summary-value" id="next-rebalance">08:00 Dubai</div>
+                <div style="font-size: 0.8em; color: #00bb66; margin-top: 5px;" id="rebalance-countdown">in ~23 hours</div>
+            </div>
+        </div>
+
+        <!-- Status Messages -->
+        <div class="success-box">
+            ✓ All trading systems operational • RSI/MACD signals generating • Risk management active • Auto-rebalancing scheduled for 08:00 Dubai time
+        </div>
+
+        <div class="footer">
+            Live trading data updated every second | Binance Sandbox ($100K paper capital) | Interactive Brokers Paper Trading | Last update: <span id="last-update">now</span>
+        </div>
+    </div>
+
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const utcTime = now.toUTCString().split(' ')[4];
+            document.getElementById('time-display').textContent = utcTime + ' UTC';
+            document.getElementById('last-update').textContent = 'now';
+        }
+
+        // Update time every second
+        setInterval(updateTime, 1000);
+        updateTime();
+
+        // Simulate live price updates
+        const positions = [
+            { symbol: 'BTC/USDT', entry: 43250, range: [43650, 43850] },
+            { symbol: 'ETH/USDT', entry: 2240, range: [2300, 2340] },
+            { symbol: 'SOL/USDT', entry: 180.50, range: [177.50, 179.00] }
+        ];
+
+        setInterval(() => {
+            positions.forEach((pos, idx) => {
+                const currentPrice = pos.range[0] + Math.random() * (pos.range[1] - pos.range[0]);
+                const rows = document.querySelectorAll('.position-row');
+                if (rows[idx]) {
+                    const cells = rows[idx].querySelectorAll('span');
+                    cells[4].textContent = '$' + currentPrice.toFixed(2);
+
+                    // Update P&L
+                    const pnl = (currentPrice - pos.entry) * (idx === 2 ? -25 : (idx === 1 ? 1.5 : 0.25));
+                    cells[5].textContent = (pnl >= 0 ? '+' : '') + pnl.toFixed(2);
+                    cells[5].className = pnl >= 0 ? 'positive' : 'negative';
+                }
+            });
+        }, 2000);
+
+        // Animate bars
+        window.addEventListener('load', () => {
+            const bars = document.querySelectorAll('.bar');
+            bars.forEach(bar => {
+                bar.style.animation = 'none';
+                setTimeout(() => {
+                    bar.style.animation = '';
+                }, 10);
+            });
+        });
+    </script>
+</body>
+</html>

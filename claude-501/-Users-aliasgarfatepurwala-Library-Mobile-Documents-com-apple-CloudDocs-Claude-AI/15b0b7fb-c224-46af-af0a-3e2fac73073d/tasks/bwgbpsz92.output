@@ -1,0 +1,33 @@
+Redeploying to Vercel...
+    "id": "dpl_Chprm8PHUaZo3dZu1YsZrwxGsF5W",
+    "url": "https://trading-5tbi291ef-aliasgar.vercel.app",
+    "inspectorUrl": "https://vercel.com/aliasgar/trading-os/Chprm8PHUaZo3dZu1YsZrwxGsF5W",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_Chprm8PHUaZo3dZu1YsZrwxGsF5W",
+    "buildMachine": {
+      "cores": 2,
+      "memory": 8192,
+      "machine": "basic",
+      "selectionType": "fixed",
+      "selectionSource": "plan-default"
+    }
+  },
+  "message": "Deployment trading-5tbi291ef-aliasgar.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel curl https://trading-5tbi291ef-aliasgar.vercel.app",
+      "when": "Verify deployment, including when Deployment Protection is enabled"
+    },
+    {
+      "command": "vercel inspect trading-5tbi291ef-aliasgar.vercel.app",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod",
+      "when": "Promote to production"
+    }
+  ]
+}
+
+[exited with code 0]

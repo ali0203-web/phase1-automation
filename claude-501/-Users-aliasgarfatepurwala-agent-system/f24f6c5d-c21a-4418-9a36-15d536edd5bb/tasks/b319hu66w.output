@@ -1,0 +1,39 @@
+=== 1. HEALTH CHECK ===
+{
+  "status": "healthy",
+  "timestamp": "2026-09-28T05:50:44.469Z",
+  "agents": 40,
+  "runningAgents": 0
+}
+
+=== 2. AGENT FLEET (40 agents) ===
+40
+40
+
+=== 3. SIGNALS (Latest) ===
+0
+
+=== 4. METRICS (Performance) ===
+0
+
+=== 5. DAILY METRICS ===
+{
+  "date": "2026-09-28",
+  "totalAgents": 0,
+  "totalTrades": 0,
+  "aggregatePnL": 0
+}
+
+=== 6. PERFORMANCE (Top/Bottom Performers) ===
+{
+  "topPerformers": 0,
+  "needsAttention": 0
+}
+
+=== 7. DASHBOARD AGENTS ===
+40
+
+=== 8. DASHBOARD SUMMARY ===
+0
+
+[exited with code 0]
