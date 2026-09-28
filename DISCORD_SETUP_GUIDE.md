@@ -8,13 +8,9 @@
 
 ## ✅ BOT IS ALREADY CONFIGURED
 
-The Discord bot **Trading OS#4607** is already set up and running in your server with these credentials:
+The Discord bot **Trading OS#4607** is already set up and running in your server.
 
-```
-Bot Token: MTU1Mzg0NjA1NTk0NTExMzYzMA.G_EyrF.3LpNKjCvL_uVWQiGqQonhz3hqAeK-v07PH6RJA
-Client ID: 1553846055945113630
-Client Secret: SG2kHfpmFQ7CBEYrVnqnRP0x4-L14PAg
-```
+**See credentials handover document for real tokens** (kept out of GitHub for security)
 
 ---
 
@@ -83,9 +79,9 @@ cat /tmp/.env | grep DISCORD
 
 Should output:
 ```
-DISCORD_BOT_TOKEN=MTU1Mzg0NjA1NTk0NTExMzYzMA.G_EyrF.3LpNKjCvL_uVWQiGqQonhz3hqAeK-v07PH6RJA
-DISCORD_CLIENT_ID=1553846055945113630
-DISCORD_CLIENT_SECRET=SG2kHfpmFQ7CBEYrVnqnRP0x4-L14PAg
+DISCORD_BOT_TOKEN=your_real_token_here (loaded from .env)
+DISCORD_CLIENT_ID=your_real_id_here (loaded from .env)
+DISCORD_CLIENT_SECRET=your_real_secret_here (loaded from .env)
 ```
 
 ### Step 3: Run the Bot
